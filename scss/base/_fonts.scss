@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'AvenirNext';
+    src: url(#{$font-path}/AvenirNext-Bold.woff) format('woff'),
+        url(#{$font-path}/AvenirNext-Bold.eot) format('eot');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url(#{$font-path}/AvenirNext-Regular.woff) format('woff'),
+        url(#{$font-path}/AvenirNext-Regular.eot) format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url(#{$font-path}/AvenirNext-Medium.woff) format('woff'),
+        url(#{$font-path}/AvenirNext-Medium.eot) format('eot');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AleoBoldItalic';
+    src: url(#{$font-path}/aleo-bolditalic-webfont.woff) format('woff'),
+        url(#{$font-path}/aleo-bolditalic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url(#{$font-path}/aleo-regular-webfont.woff) format('woff'),
+        url(#{$font-path}/aleo-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'AleoBold';
+    src: url(#{$font-path}/aleo-bold-webfont.woff) format('woff'),
+        url(#{$font-path}/aleo-bold-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AleoItalic';
+    src: url(#{$font-path}/aleo-italic-webfont.woff) format('woff'),
+        url(#{$font-path}/aleo-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AleoBoldItalic';
+    src: url(#{$font-path}/aleo-bolditalic-webfont.woff) format('woff'),
+        url(#{$font-path}/aleo-bolditalic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

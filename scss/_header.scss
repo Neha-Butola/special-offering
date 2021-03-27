@@ -1,0 +1,135 @@
+.alert-header {
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+  &.christmas-Joy {
+      background: $christmas-joy;
+  }
+  .btn-close {
+      border: 0;
+      background: transparent;
+      right: 0;
+      top: -10px;
+  }
+  h6 {
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}
+
+.site-header {
+box-shadow: 0 0 6px rgba(0,0,0,0.2);
+font-family: 'AvenirNext';
+transition: 0.25s ease-in;
+.navbar-toggler {
+  width: 35px;
+  outline: none;
+  padding: 0;
+  border: 0;
+  order: 1;
+  .icon-bar {
+    height: 3px;
+    background: #000;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    display: block;
+  }
+}
+.navbar-nav {
+  font-size: 17px;
+  > li {
+    font-weight: 700;
+    padding: 0 0.7rem;
+  }
+  a {
+    color: $body-color;
+    &:hover {
+      color: $green;
+    }
+  }
+  li.current-menu {
+    > a {
+      color: $green;
+    }
+  }
+  .dropdown-item {
+    font-family: "Aleo";
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    &.active, &:active {
+      background: transparent;
+    }
+  }
+}
+.navbar-collapse {
+  .btn-close {
+    right: 60px;
+    top: 30px;
+    background: transparent;
+    border: 0;
+    font-size: 25px;
+    outline: none;
+  }
+}
+.search-form{
+  width: 40px;
+  height: 50px;
+  z-index: 2;
+input[type="text"] {
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 5px 50px 5px 10px;
+  width: 0px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background: none;
+  border-radius: 0;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+  &:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+  &:focus {
+    width: 500px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    background: #fff;
+    cursor: text;
+  }
+}
+input[type="submit"] {
+  height: 35px;
+  width: 22px;
+  display: inline-block;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA1MCA1MCIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iNTBweCIgaGVpZ2h0PSI1MHB4Ij48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIHN0eWxlPSIgIiBkPSJNIDIxIDMgQyAxMS42MDE1NjMgMyA0IDEwLjYwMTU2MyA0IDIwIEMgNCAyOS4zOTg0MzggMTEuNjAxNTYzIDM3IDIxIDM3IEMgMjQuMzU1NDY5IDM3IDI3LjQ2MDkzOCAzNi4wMTU2MjUgMzAuMDkzNzUgMzQuMzQzNzUgTCA0Mi4zNzUgNDYuNjI1IEwgNDYuNjI1IDQyLjM3NSBMIDM0LjUgMzAuMjgxMjUgQyAzNi42Nzk2ODggMjcuNDIxODc1IDM4IDIzLjg3ODkwNiAzOCAyMCBDIDM4IDEwLjYwMTU2MyAzMC4zOTg0MzggMyAyMSAzIFogTSAyMSA3IEMgMjguMTk5MjE5IDcgMzQgMTIuODAwNzgxIDM0IDIwIEMgMzQgMjcuMTk5MjE5IDI4LjE5OTIxOSAzMyAyMSAzMyBDIDEzLjgwMDc4MSAzMyA4IDI3LjE5OTIxOSA4IDIwIEMgOCAxMi44MDA3ODEgMTMuODAwNzgxIDcgMjEgNyBaICIvPjwvZz48L3N2Zz4=) center center no-repeat;
+  background-size: contain;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  outline: none;
+  cursor: pointer;
+}
+} 
+}
+
+.navbar-brand {
+width: 280px;
+}
+
+.dropdown-toggle {
+&::after {
+  margin-left: 0.1em;
+  opacity: 0.4;
+  vertical-align: middle;
+}
+}

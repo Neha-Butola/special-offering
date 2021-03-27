@@ -1,0 +1,199 @@
+/*======= GLobal CSS =========*/
+
+/*------- color classes -------------*/
+
+.peaceglobal-clr  {
+    color: $peaceGlobal!important;
+}
+.oghs-clr {
+    color: $oghs !important;
+}
+.christmasjoy-clr {
+    color: $christmas-joy !important;
+}
+.pentecost-clr {
+    color: $pentecost !important;
+}
+.green-clr {
+    color: $green !important;
+}
+
+.green-bg,
+.element-green:before {
+    background: $green;
+}
+
+.gray-bg {
+    background: #ebedee;
+}
+/*---- font classes -------*/
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-sm {
+    font-size: 14.5px;
+}
+
+.heading-sm {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+.body-font-size {
+    font-size: 1.1rem;
+}
+
+
+/*-------image css ---------*/
+.object-fit {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-wrap {
+    position: relative;
+    padding-top: 70%;
+    > img {
+       @include position-absolute;
+       content: none;
+       object-fit: cover;
+       top: 0;
+       left: 0;
+    }
+}
+
+.img-banner {
+    .img-wrap  {
+        padding-top: 50%;
+    }
+}
+
+/*------ content ------*/
+.block-title {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.block-subtitle {
+    text-transform: lowercase;
+    color: $gray;
+    font: 400 1.44rem "AleoItalic", sans-serif;
+    margin-bottom: 3px;
+}
+
+.desc-content {
+    max-width: 640px;
+    margin: 0 auto;
+}
+/*-------layout css-------- */
+.section-common {
+    padding: 4rem 0 1rem;
+}
+
+.site-container {
+    padding: 0 10%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*------- offerings classes ---*/
+.offering-clr {
+    color: $green;
+}
+
+.offering-bg {
+    background: $green;
+}
+
+.christmas-joy {
+    .offering-clr {
+        color: $christmas-joy;
+    }
+    .offering-bg,
+    .element-bg:before,
+    .simple-pagination .current {
+        background: $christmas-joy;
+    }
+}
+
+.peaceGlobal-witness {
+    .offering-clr {
+        color: $peaceGlobal;
+    }
+    .offering-bg,
+    .element-bg:before,
+    .simple-pagination .current {
+        background: $peaceGlobal;
+    }
+}
+
+.oghs {
+    .offering-clr {
+        color: $oghs;
+    }
+    .offering-bg,
+    .element-bg:before,
+    .simple-pagination .current  {
+        background: $oghs
+    }
+}
+
+.pentecost {
+    .offering-clr {
+        color: $pentecost;
+    }
+    .offering-bg,
+    .element-bg:before,
+    .simple-pagination .current {
+        background: $pentecost;
+    }
+}
+
+.pattern-img {
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.62;
+    mix-blend-mode: overlay;
+}
+
+/*-------- animation css --------------*/
+
+.animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown
+}

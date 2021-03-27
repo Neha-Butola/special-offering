@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Give</title>
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <!-- style file -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="css/style.css" rel="stylesheet" media="all">
+    </head>
+
+    <body>
+    <!-- * =============== Header =============== * -->
+    <header class="site-header bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light site-container py-3">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="d-lg-none position-absolute btn-close" data-dismiss="navbar-collapse">
+            <i class="fa fa-times"></i>
+            </button>
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Offerings
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item oghs-clr" href="oghs-offerings.html" target=_blank>One Great hour of Sharing</a></li>
+                    <li><a class="dropdown-item pentecost-clr" href="pentecost-offering.html" target=_blank>Pentecost</a></li>
+                    <li><a class="dropdown-item peaceglobal-clr" href="#" target=_blank>Peace and Global Witness</a></li>
+                    <li> <a class="dropdown-item christmasjoy-clr" href="#" target=_blank>Chrismas Joy</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="story.html" target=_blank>Stories</a>
+            </li>
+            <li class="nav-item">
+                <a href="curriculum.html" target=_blank>Curriculum</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" target=_blank>Leader Support</a>
+            </li>
+            </ul>
+            <a href="give.html" class="btn-transparent btn-green mr-2 mx-xl-3"> <span class="position-relative"> Give now</span></a>
+            <button class="btn-common btn-green btn-hover-clr"><span class="position-relative">Get Strated<i
+                class="fas fa-arrow-up link ml-2"></i></span></button>
+        </div>
+        <form action="" class="position-relative align-self-baseline search-form">
+            <input id="search" name="search" type="text" placeholder="Search....">
+            <input id="search_submit" type="submit">
+        </form>
+        </nav>
+    </header>
+    <main>
+        <section class="page-banner position-relative green-bg">
+            <img class="h-100 position-absolute pattern-img" src="images/pattern-big.png" alt="">
+            <div class="site-container">
+                <div class="caption py-5 text-white col-lg-7 px-0">
+                <h5 class="date">Give Now</h5>
+                <h1 class="text-white">Simple Giving Title Here</h1>
+                <p class="">Add some subtext about how easy it is to participate, even if your church doesn’t currently
+                    offer one of the offerings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-common give-wrap pb-5">
+            <div class="site-container">
+                <div class="row">
+                <div class="col-lg-7 pr-lg-4">
+                   <div id="firstPage" class="collapse show">
+                        <ul class="nav nav-tabs">
+                        <li class="text-center">
+                            <h5 class="mb-0 active" data-target="#once" data-toggle="tab">Give Once</h5>
+                        </li>
+                        <li class="text-center">
+                            <h5 class="mb-0" data-target="#monthly" data-toggle="tab">Give Monthly</h5>
+                        </li>
+                        </ul>
+                        <div class="tab-content my-5">
+                            <div id="once" class="tab-pane active">
+                                <div class="form-group">
+                                    <label for="selectonce" class="font-weight-bold">Designated Offering</label>
+                                    <select id="selectonce" class="selectOffering form-control col-md-10">
+                                        <option value="option1">One Great Hour of Sharing</option>
+                                        <option value="option2">Pentecost</option>
+                                        <option value="option3">Peace & Global Witness</option>
+                                        <option value="option4">Christmas Joy</option>
+                                    </select>
+                                </div>
+                                <h4 class="amounts d-flex flex-wrap mt-4 mb-5">
+                                    <button class="labels text-white">$50</button>
+                                    <button class="labels text-white">$100</button>
+                                    <button class="labels text-white">$250</button>
+                                    <button class="labels text-white position-relative d-flex justify-content-center">$365 <span class="text-btm">$1
+                                        per day</span> </button>
+                                    <button class="labels text-white other">other</button>
+                                </h4>
+                                <div class="row form-group gray-bg py-4 px-3 align-items-center no-gutters mb-4">
+                                    <label for="yourAmount" class="col-md-3 px-2">Your Donation:</label>
+                                    <div class="col-md-5 px-2">
+                                        <input id="yourAmount" class="form-control" type="text" placeholder="$ 0.00">
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label pt-1" for="customCheck1">This is a memorial donation</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label pt-1" for="customCheck2">This is a honorary
+                                    donation</label>
+                                </div>
+                                <div class="mt-3 mb-5 col-lg-8 p-0">
+                                <input id="yourAmount" class="form-control" type="text" placeholder="In honor of:">
+                                </div>
+                            </div> <!--/once-->
+                            <div id="monthly" class="tab-pane">
+                                    <div class="form-group">
+                                    <label for="selectmonthly" class="font-weight-bold">Designated Offering</label>
+                                    <select id="selectmonthly" class="selectOffering form-control col-md-10">
+                                        <option value="option1">One Great Hour of Sharing</option>
+                                        <option value="option2">Pentecost</option>
+                                        <option value="option3">Peace & Global Witness</option>
+                                        <option value="option4">Christmas Joy</option>
+                                    </select>
+                                    </div>
+                                    <h4 class="amounts d-flex flex-wrap mt-4 mb-5">
+                                        <button class="labels text-white">$5</button>
+                                        <button class="labels text-white">$10</button>
+                                        <button class="labels text-white">$30</button>
+                                        <button class="labels text-white">$50  </button>
+                                        <button class="labels text-white other">other</button>
+                                    </h4>
+                                    <div class="row form-group gray-bg py-4 px-3 align-items-center no-gutters mb-4">
+                                        <label for="yourAmount" class="col-md-3 px-2">Your Donation:</label>
+                                        <div class="col-md-5 px-2">
+                                            <input id="yourAmount" class="form-control" type="text" placeholder="$ 0.00">
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label pt-1" for="customCheck1">This is a memorial donation</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label pt-1" for="customCheck2">This is a honorary
+                                        donation</label>
+                                    </div>
+                                    <div class="mt-3 mb-5 col-lg-8 p-0">
+                                    <input id="yourAmount" class="form-control" type="text" placeholder="In honor of:">
+                                    </div>
+                                </div> <!--/once-->
+                            <div class="mb-5 pl-2">
+                                    <button class="btn-common btn-big btn-green btn-hover-clr" data-toggle="collapse" data-target="#nextPage">
+                                        <span class="position-relative">continue<i class="fas fa-arrow-up link ml-1"></i></span>
+                                    </button>
+                                </div>
+                            <img src="images/norton-secure.png" alt="NortonSECURED">
+                        </div>
+                    </div> <!--/collpase-->
+                    <div id="nextPage" class="collapse">
+                      <h5 class="green-clr">< back</h5> 
+                       <div class="gray-bg px-4 py-5 position-relative">
+                           <img class="position-absolute img-right" src="images/lock-icon.png" alt="">
+                            <h4 class="mb-4 pr-5">Giving $250 to One Great Hour of sharing <a href="#" class="green-clr text-md">(edit)</a></h4>
+                            <label class="font-weight-bold">Select Payment Type <span class="required">*</span></label>
+                            <div class="row">
+                                <div class="custom-control custom-radio col-sm-4 mb-3">
+                                    <input type="radio" class="custom-control-input" id="Validation1" name="radio-stacked" required>
+                                    <label class="custom-control-label" for="Validation1">Credit Card</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-4 mb-3">
+                                    <input type="radio" class="custom-control-input" id="Validation2" name="radio-stacked" required>
+                                    <label class="custom-control-label" for="Validation2">Check</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-4 mb-3">
+                                    <input type="radio" class="custom-control-input" id="Validation3" name="radio-stacked" required>
+                                    <label class="custom-control-label" for="Validation3">Bank Account</label>
+                                </div>
+                                <div class="col-md-7 mt-4 order-mobile">
+                                        <div class="form-group">
+                                            <label for="selectOffering" class="font-weight-bold">Bank Routing Number<span class="required">*</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div> <!--/form-group-->
+                                        <div class="form-group">
+                                            <label for="selectOffering" class="font-weight-bold">Bank Account Number<span class="required">*</span></label>
+                                            <input type="text" class="form-control" required>
+                                        </div> <!--/form-group-->
+                                        <div class="form-group">
+                                            <label for="selectOffering" class="font-weight-bold">Bank Account Type<span class="required">*</span></label>
+                                            <select id="selectOffering" class="form-control">
+                                                <option value="value1">Please Choose</option>
+                                                <option value="value2">option2</option>
+                                                <option value="value3">option3</option>
+                                            </select>
+                                        </div> <!--/form-group-->
+                                </div>
+                                <div class="col-md-5 mt-4">
+                                    <img src="images/card.png" alt="">
+                                </div>
+                            </div>
+                       </div> <!--/gray-bg-->
+                       <div class="row my-5">
+                           <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">First Name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Last Name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Street Adrees<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">City<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">State<span class="required">*</span></label>
+                                    <select id="selectOffering" class="form-control">
+                                        <option>State1</option>
+                                        <option>Pentecost</option>
+                                        <option>Peace &amp; Global Witness</option>
+                                        <option>Christmas Joy</option>
+                                    </select>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Zip Code<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Daytime Phone<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Email<span class="required">*</span></label>
+                                    <input type="text" class="form-control" required>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                           <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="selectOffering" class="font-weight-bold">Comments/Instruction/Name of Local Congregation</label>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                </div> <!--/form-group-->
+                           </div> <!--col-->
+                       </div>
+                       <h4>By pressing Make Your Gift:</h4>
+                       <p>I (we) hereby authorize Presbyterian Church(USA), to initiate debit entries to my (our) Checking Account or Savings Account as indicated above 
+                           at my depository financial institution and to debit the same to such account. 
+                           I (we) acknowledge that the originator of ACH transactions to my (our account) must comply with the provisions of U.S. law.
+                        </p>
+                        <h4 class="mt-5 mb-4">Give $250 to One Great Hour of Sharing</h4>
+                        <button class="btn-common btn-big btn-green btn-hover-clr" data-toggle="collapse" data-target="#nextPage" aria-expanded="true">
+                                <span class="position-relative">Make Your Gift<i class="fas fa-arrow-up link ml-1"></i></span>
+                            </button>
+                        <div class="mt-4 pl-md-3">
+                            <img src="images/norton-secure.png" alt="NortonSECURED">
+                        </div>
+                    </div>
+                    <!--/tab-content-->
+                </div>
+                <!--/col-->
+                <div class="col-lg-5 pl-xl-5">
+                    <div id="option1" class="select-content">
+                    <img src="images/oghs-story1.jpg" alt="">
+                    <h4 class="block-subtitle green-clr mt-3">together we can make a difference</h4>
+                    <h2 class="mb-3">Your gift can make a big difference title (be specific if possible).</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam
+                    </p>
+                    <address>
+                        Presbyterian Church (U.S.A.)
+                        P.O. Box 643700
+                        Pittsburgh, PA 15264-3700
+                    </address>
+                    </div>
+                    <div id="option2" class="select-content pentecost">
+                    <img src="images/pentecost-1.jpg" alt="">
+                    <h4 class="block-subtitle offering-clr mt-3">Pentecost</h4>
+                    <h2 class="mb-3">Your gift can make a big difference title (be specific if possible).</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <address>
+                        Presbyterian Church (U.S.A.)
+                        P.O. Box 643700
+                        Pittsburgh, PA 15264-3700
+                    </address>
+                    </div>
+                    <div id="option3" class="select-content peaceGlobal-witness">
+                    <img src="images/peacenglobal-story1.jpg" alt="">
+                    <h4 class="block-subtitle offering-clr mt-3">Peace & Global Witness</h4>
+                    <h2 class="mb-3">Your gift can make a big difference title (be specific if possible).</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <address>
+                        Presbyterian Church (U.S.A.)
+                        P.O. Box 643700
+                        Pittsburgh, PA 15264-3700
+                    </address>
+                    </div>
+                    <div id="option4" class="select-content christmas-joy">
+                    <img src="images/chrismas-joy-story1.jpg" alt="">
+                    <h4 class="block-subtitle offering-clr mt-3">together we can make a difference</h4>
+                    <h2 class="mb-3">Your gift can make a big difference title (be specific if possible).</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cum quaerat, dignissimos voluptas quae
+                        hic similique veniam veritatis eum eveniet reprehenderit voluptatibus atque ad, aperiam doloremque illo
+                        quo officiis voluptatum?</p>
+                    <address>
+                        Presbyterian Church (U.S.A.)
+                        P.O. Box 643700
+                        Pittsburgh, PA 15264-3700
+                    </address>
+                    </div>
+
+                </div>
+                </div>
+            </div> <!--site-container-->
+        </section>
+
+        <section class="subscribe-section">
+            <div class="site-container">
+            <div class="row">
+                <div class="col-md-12 col-lg-3 mb-3">
+                <h3 class="mt-1 mb-0">Subscribe for Updates</h3>
+                </div>  <!--/col-->
+                <div class="col-sm-6 col-lg-3 form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+                </div> <!--/col-->
+                <div class="col-sm-6 col-lg-3 form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+                </div> <!--/col-->
+                <div class="col-lg-3 form-group">
+                <input type="submit" class="btn-transparent btn-white" value="Send Me Updates">
+                <!-- <button type="submit" class="btn btn-white">Send Me Updates</button> -->
+                </div> <!--/col-->
+            </div> <!--/row-->
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="site-container">
+                <div class="row footer-top justify-content-between">
+                <div class="col-md-4 col-xl-5 d-flex flex-column my-3">
+                    <div class="mb-4">
+                    <img src="images/chuch.png" alt="">
+                    <img class="ml-3" src="images/logo-footer.png" alt="">
+                    </div>
+                    <address class="mb-2">100 whiterspoon street Louisville, Ky 40202</address>
+                    <a href="tel:+8723283" class="text-white text-sm">(800)872-3283</a>
+                    <a href="#" class="text-white text-sm pt-1">specialofferings@pcusa.org</a>
+                    <ul class="d-flex social-icons mt-4 mb-0 pl-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>   <!--/col-lg-4-->
+                <div class="col-6  col-md-4 col-xl-3 my-3">
+                    <ul class="text-white footer-links pl-0">
+                    <li><a href="#">About</a></li>
+                    <li><a href="story.html">Stories</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Leader Support</a></li>
+                    <li><a href="#">Giving Catalog</a></li>
+                    <li><a href="#">Give Now</a></li>
+                    </ul>
+                </div>      <!--/col-->
+                <div class="col-6 col-md-4 col-xl-3 my-3">
+                    <ul class="text-white footer-links pl-0">
+                    <li><a href="oghs-offerings.html">One Great Hour of Sharing</a></li>
+                    <li><a href="pentecost-offering.html">Pentecost</a></li>
+                    <li><a href="#">Peace & Global Witness</a></li>
+                    <li><a href="#">Chrismas Joy</a></li>
+                    <li><a href="#">4 for 4</a></li>
+                    </ul>
+                </div> <!--/col-->
+                </div>
+                <div class="d-flex mt-5 footer-bottom flex-wrap align-items-center">
+                <h6 class="w-md-100 pr-3 text-sm font-weight-normal copyright">
+                    &copy; 2019 Pc(USA). All Rights Reserved
+                </h6>
+                <h6 class="d-flex flex-wrap text-white font-weight-normal">
+                    <a href="#" class="p-2">PC(USA)Home</a>
+                    <a href="#" class="p-2">Copyright PC(USA)</a>
+                    <a href="#" class="p-2">Privacy Policy</a>
+                    <a href="#" class="p-2">Terms of Use</a>
+                    <a href="#" class="p-2">Contact Web Staff</a>
+                </h6>
+                </div>
+            </div> <!--/site-container-->
+        </footer>
+    </main>
+        <!-- js files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/pagination.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

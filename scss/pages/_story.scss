@@ -1,0 +1,22 @@
+.story-detail {
+    .date {
+        color: #919191;
+        font-family: 'AleoItalic';
+    }
+}
+.link-text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.img-banner {
+   .container  {
+     max-width: 950px;
+   } 
+}
+
+.share-wrap {
+    border-top: 3px solid #ebebeb;
+    border-bottom: 3px solid #ebebeb;
+}

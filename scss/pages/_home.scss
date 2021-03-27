@@ -1,0 +1,286 @@
+.overlay:before {
+    @include position-absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-home {
+    height: calc(100vh - 250px);
+    position: relative;
+    &.overlay:before {
+        background: rgba(0,0,0,0.23);
+        background: -moz-linear-gradient(left, rgba(0,0,0,0.86) 21%, rgba(0,0,0,0.81) 26%, rgba(0,0,0,0.13) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(21%, rgba(0,0,0,0.86)), color-stop(26%, rgba(0,0,0,0.81)), color-stop(100%, rgba(0,0,0,0.13)));
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.86) 21%, rgba(0,0,0,0.81) 26%, rgba(0,0,0,0.13) 100%);
+        background: -o-linear-gradient(left, rgba(0,0,0,0.86) 21%, rgba(0,0,0,0.81) 26%, rgba(0,0,0,0.13) 100%);
+        background: -ms-linear-gradient(left, rgba(0,0,0,0.86) 21%, rgba(0,0,0,0.81) 26%, rgba(0,0,0,0.13) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,0.86) 21%, rgba(0,0,0,0.81) 26%, rgba(0,0,0,0.13) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+    }
+    img {
+        object-fit: cover;
+    }
+    .banner-caption {
+        max-width: 490px;
+        left: 8%;
+        padding: 0 15px;
+    }
+}
+
+/*---- text slider css in banner ----*/
+.text-carousel {
+    .carousel-item {
+        transition: transform 0.25s ease-in-out;
+    }
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+    .carousel-item-next:not(.carousel-item-left),
+    .active.carousel-item-right {
+    transform: translateY(100%);
+    }
+
+    .carousel-item-prev:not(.carousel-item-right),
+    .active.carousel-item-left {
+    transform: translateY(-100%);
+    }
+}
+
+/*---- offering section -----*/
+.offerings-section {
+    a {
+        position: relative;
+        &:before,
+        &:after {
+            @include position-absolute;
+            top: 0;
+            left: 0;
+            height: 51%;
+            transition: 0.2s linear;
+        }
+        &.oghs {
+            &:before,
+            &:after {
+                background: $oghs;
+            }
+            &:hover {
+                .img-wrap:before {
+                    background: $oghs;
+                }
+            }
+        }
+        &.pentecost {
+            &:before,
+            &:after {
+                background: $pentecost;
+            }
+            &:hover {
+                .img-wrap:before {
+                    background: $pentecost;
+                }
+            }
+        }
+        &.peaceGlobal {
+            &:before,
+            &:after {
+                background: $peaceGlobal;
+            }
+            &:hover {
+                .img-wrap:before {
+                    background: $peaceGlobal;
+                }
+            }
+        }
+        &.chrismas-joy{
+            &:before,
+            &:after {
+                background: $christmas-joy;
+            }
+            &:hover {
+                .img-wrap:before {
+                    background: $christmas-joy;
+                }
+            }
+        }
+        &:after {
+            top: auto;
+            bottom: 0;
+        }
+        &:hover:before,
+        &:hover:after {
+            height: 0;
+        }
+        &:hover .img-wrap {
+            opacity: 1;
+        }
+    }
+    .img-wrap {
+        padding-top: 27%;
+        z-index: 1;
+        opacity: 0.6;
+        mix-blend-mode: multiply;
+        transition: 0.2s linear;
+        &:before {
+            @include position-absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    h5 {
+        @include center-vert;
+        z-index: 2;
+        font-weight: 700;
+        font-size: 17px;
+    }
+}
+
+/*---- band-together section -----*/
+.band_together-section {
+    .cta-section {
+        max-width: 980px;
+        h3 {
+            font-size: 1.75rem;
+        }
+    }
+    .img-wrap {
+        padding-top: 50%;
+        > img {
+            padding: 0 2.2rem;
+        }
+    }
+    .offering-img {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .learn-more-btn {
+        position: relative;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'AvenirNext';
+        i {
+            top: 1px;
+            right: -16px;
+            font-size: 20px;
+            opacity: 0;
+            transition: 0.2s ease;
+        }
+        &:hover i {
+            right: -22px;
+            opacity: 1;
+        }
+    }
+}
+
+.offering-img {
+    img {
+        object-fit: contain;
+    }
+}
+
+/*---- testimonial section -----*/
+.testimonial-section {
+    color: #fff;
+    .carousel-indicators {
+        bottom: 20px;
+        li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    } 
+    .carousel {
+        min-height: 280px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+    }  
+    .carousel-inner{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .carousel-item {
+        padding: 1rem 0;
+    }
+    &.christmas-joy {
+        background: $christmas-joy;
+    }
+    &.oghs {
+        background: $oghs;
+    }
+    &.pentecost {
+        background: $pentecost;
+    }
+    &.peaceGlobal-witness {
+        background: $peaceGlobal;
+    }
+    .desc {
+        font-family: 'AleoItalic';
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+    .name {
+        font-size: 13px;
+    }
+    .desig {
+        font-size: 12px;
+        opacity: 0.5;
+    }  
+}
+
+/*---- stories section -----*/
+.stories-wrap {
+    h6 {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+   h4 {
+        max-width: 310px;
+        margin: 0 auto;
+        line-height: 1.4;
+   } 
+   .row > a {
+       padding: 0 2rem;
+   }
+   img,.offering-clr {
+    transition: 0.2s ease-in-out;
+    }
+   a:hover {
+      
+    img {
+        opacity: 0.5;
+       }
+    .offering-clr {
+        letter-spacing: 0.15em;
+    }
+
+   }
+   
+}
+
+.catalog-section  {
+    padding: 5rem 0;
+    &.overlay {
+        &:before {
+            background: rgba(0,0,0,0.57)
+        }
+    }
+    img {
+        z-index: -1;
+    }
+}
+
+/*---- subscribe section -----*/
+.subscribe-section {
+    background: $gray;
+    font-family: 'AvenirNext';
+    padding: 1.8rem 0 0.8rem;
+    .form-control {
+        border-radius: 0;
+        color: $black-secondary;
+        font-size: inherit;
+    }
+}

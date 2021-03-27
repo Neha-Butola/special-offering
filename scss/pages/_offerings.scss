@@ -1,0 +1,202 @@
+/*====== offering page css =======*/
+
+.page-banner {
+    .img-pattern {
+        top:0;
+        right: 0;
+    }
+    h1 {
+        font-size: 3.12rem;
+    }
+    .date {
+        font-family: 'AleoItalic';
+        font-size: 1.5rem;
+        color: rgba(255,255,255,0.57);
+        font-weight: 400;
+    }
+}
+
+.image-grid {
+    img {
+        object-fit: cover;
+    }
+    .caption  {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        max-width: 450px;
+        padding: 1.4rem 24px;
+        &.right {
+            left: auto;
+            right: 0;
+        }
+        &.top {
+            bottom: auto;
+            top: 30px;
+            max-width: 288px;
+        }
+        &.bottom {
+            bottom: 20px;
+            max-width: 370px;       
+        }
+        h3 {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+.resource-card {
+    border-top: 8px solid;
+    padding: 15px;
+    transition: 0.15s ease-in-out;
+    &:hover {
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        background: #fff;
+    }
+    img {
+       max-height: 100px;
+       object-fit: contain
+    }
+    h6 {
+        font-family: 'AleoItalic';
+    }
+    .title {
+        font-size: 1em;
+        line-height: 1.25;
+    }
+    > div:nth-child(2) {
+        width: calc(100% - 130px)
+    }
+}
+
+.offering-logo {
+    width: 90px;
+    height: 85px;
+}
+
+.stat-section {
+    max-width: 620px;
+    .count {
+        font-size: 2.5rem;
+        font-family: 'AleoBoldItalic';
+    }
+}
+
+.title-section {
+    &:before {
+
+    }
+}
+
+.triangle-down {
+    position: relative;
+    &:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 0;
+        height: 0;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 22px solid transparent;
+        border-right: 22px solid transparent;
+        border-top: 20px solid;
+    }
+}
+
+/*------- question section -------*/
+.question-section {
+    h3 {
+        font-size: 1.56rem;
+    }
+    .collapse  {
+        transition: 0.25s ease-in-out;
+    }
+    button {
+        box-shadow: none !important;
+        background: transparent;
+        &[aria-expanded="true"] {
+            i:before { content: "\F068"; }
+        }
+    }
+    .collapse-wrap {
+        border-top: 2px solid #ebebeb;
+        &:last-of-type {
+            border-bottom: 2px solid #ebebeb;
+        }
+    }
+
+}
+
+.pagination-wrapper {
+    .nav-tabs {
+        color: $text-gray;
+        font: 700 1.15rem 'AvenirNext';    
+        line-height: 1.1;
+        border: 0;
+        li {
+            max-width: 190px;
+            cursor: pointer;
+            &:hover {
+                color: $body-color;
+            }
+        }
+        span.active {
+            color: $body-color;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.simple-pagination { 
+    .page-link {
+        border: 0;
+        &:hover {
+            color: inherit;
+        }
+    }
+    ul {
+        margin: 0 0 20px;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-family: 'AvenirNext';
+        font-weight: 700;
+    }
+    .prev,.next {
+        background: transparent !important;
+    }
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        color: $gray;
+        &.active {
+            color: #fff;
+        }
+        span {
+            display: block;
+        }
+    }
+    a {
+        color: inherit;
+    }
+    .current {
+        background: $text-gray;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%
+    }
+}
+

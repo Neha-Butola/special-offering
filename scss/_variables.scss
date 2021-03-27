@@ -1,0 +1,50 @@
+/** ===============  Variables =============== **/
+
+
+
+$blue:   #29a2cb;
+$light-blue: rgba(39, 162, 203,0.7); 
+$purple: #702082;
+$light-purple: rgba(112, 33, 131,0.7);
+$red:     #cb333b;
+$light-red: rgba(202, 50, 58,0.7);
+$text-red: #eb4125;
+$green:   #84ac25;
+$dark-green: #618116;
+$brown:  #cf7622;
+$light-brown:  rgba(126, 62, 0,0.7);
+$black: #221e1a;
+$black-secondary: #2f3238;
+$gray: #7d8a9a;
+$gray-light: #a3acb6;
+$text-gray: #848891;
+
+$font-path: '../fonts';
+
+//== Typography
+
+
+//
+//## Font, line-height, and color for body text, headings, and more.
+$body-color: $black;
+$font-family-primary : 'Aleo', sans-serif;
+$line-height-base: 26px;
+$font-weight-base: 400;
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.02rem;
+$font-size-h3: 1.56rem;
+$font-size-h4: 1.37rem;
+$font-size-h5: 19px;
+$font-size-h6: 15px;
+
+/*=== path variables =====*/
+
+
+
+/*==== color varianles ======*/
+/*===== custom-variables ======*/
+$oghs: $blue;
+$pentecost: $red;
+$peaceGlobal: $brown;
+$christmas-joy: $purple;
+
